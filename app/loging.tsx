@@ -35,7 +35,7 @@ export default function Loging(){
 
             <Text style={styles.pass}>Forgot Password ?</Text> 
 
-            <TouchableOpacity style={styles.button} onPress={()=>{router.push('/home')}}>
+            <TouchableOpacity style={styles.button} onPress={()=>{router.push('/(tabs)/(home)/')}}>
                 <Text style={styles.buttonText} >Login</Text>
             </TouchableOpacity>
 

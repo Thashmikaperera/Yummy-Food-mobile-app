@@ -4,11 +4,11 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 export default function RootLayout() {
   return (
     <SafeAreaProvider>
-      <Stack>
-        <Stack.Screen name="index" options={{headerShown: false}} />
-        <Stack.Screen name="loging" options={{headerShown: false}} />
-        <Stack.Screen name="signUp" options={{headerShown: false}} />
-        <Stack.Screen name="home" options={{headerShown: false}} />
+      <Stack screenOptions={{headerShown: false}}>
+        <Stack.Screen name="index" />
+        <Stack.Screen name="loging" />
+        <Stack.Screen name="signUp" />
+        <Stack.Screen name="(tabs)" />
       </Stack>
     </SafeAreaProvider>
   );

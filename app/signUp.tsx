@@ -1,7 +1,7 @@
 import { Text,Image,StyleSheet,TouchableOpacity,TextInput } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import React from 'react';
-import { Link } from "expo-router";
+import { Link,router } from "expo-router";
 
 export default function SignUp(){
     const [text, onChangeText] = React.useState('');
@@ -12,7 +12,7 @@ export default function SignUp(){
             <Image style={styles.img}
                 source={
                     require('../assets/images/logo.png')
-                }/>
+            }/>
 
             <Text style={styles.welcome}>Welcome our Store</Text>   
 
@@ -40,7 +40,7 @@ export default function SignUp(){
                 placeholderTextColor='black'
             />
 
-            <TouchableOpacity style={styles.button} >
+            <TouchableOpacity style={styles.button} onPress={()=>{router.push('/(tabs)/(home)/')}}>
                 <Text style={styles.buttonText} >Sign up</Text>
             </TouchableOpacity>
 
@@ -73,6 +73,7 @@ export default function SignUp(){
             </TouchableOpacity>
 
             <Text style={styles.acc}>already have an account ? <Link href={'/loging'} style={{color: "#FB6107"}}>Sign in</Link></Text>
+            .
             
         </SafeAreaView>
     )
