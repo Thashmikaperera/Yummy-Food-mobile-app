@@ -6,7 +6,12 @@ export default function Home() {
   const [text, onChangeText] = React.useState('');
 
   return (
-    <SafeAreaView style={{flex:1}}>
+    <SafeAreaView style={{
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor:'#F2F2F2'
+    }}>
        <Image style={styles.img}
                 source={
                     require('@/assets/images/logo.png')
@@ -124,74 +129,73 @@ export default function Home() {
 
 const styles = StyleSheet.create({
     img:{
-        width:135,
-        height:70,
-        left:270,
-        bottom:60
+      width:130,
+      height:70,
+      left:150,
+      top:45
     },
 
     input: {
         width: 280,
-        height: 50,
+        height: 44,
         margin: 10,
         borderWidth: 2,
-        bottom:50,
-        padding: 10,
-        left:20,
+        top:30,
+        padding: 13,
+        right:30,
         borderRadius:15
       },
 
       searchlogo:{
         width:25,
         height:22,
-        left:265,
-        bottom:94
+        left:80,
+        bottom:12
       },
 
       notification:{
         width:40,
         height:31,
-        left:322,
-        bottom:122
+        left:140,
+        bottom:40
       },
 
       category:{
         fontSize:25,
         fontWeight:'bold',
-        left:30,
-        bottom:48
+        right:80
       },
 
       breakfast:{
         width:80,
         height:80,
-        left:28,
         borderRadius:7,
-        bottom:40
+        top:30,
+        right:130
       },
 
       lunch:{
         width:80,
         height:80,
-        left:114,
         borderRadius:7,
-        bottom:150
+        bottom:80,
+        right:45
       },
 
       dinner:{
         width:80,
         height:80,
-        left:199,
         borderRadius:7,
-        bottom:260
+        bottom:190,
+        left:40
       },
 
       sweets:{
         width:80,
         height:80,
-        left:284,
         borderRadius:7,
-        bottom:370
+        bottom:300,
+        left:125
       },
 
       bre:{
@@ -200,8 +204,8 @@ const styles = StyleSheet.create({
         height:30,
         justifyContent:'center',
         alignItems:'center',
-        bottom:80,
-        left:28
+        bottom:10,
+        right:130
       },
 
       lun:{
@@ -210,8 +214,8 @@ const styles = StyleSheet.create({
         height:30,
         justifyContent:'center',
         alignItems:'center',
-        bottom:190,
-        left:114
+        bottom:120,
+        right:45
       },
 
       Din:{
@@ -220,8 +224,8 @@ const styles = StyleSheet.create({
         height:30,
         justifyContent:'center',
         alignItems:'center',
-        bottom:300,
-        left:199
+        bottom:230,
+        left:40
       },
       swt:{
         backgroundColor:'#D9D9D9',
@@ -229,41 +233,40 @@ const styles = StyleSheet.create({
         height:30,
         justifyContent:'center',
         alignItems:'center',
-        bottom:410,
-        left:284
+        left:125,
+        bottom:340
       },
 
       main:{
         backgroundColor: '#FB6107',
         height: 142,
         width: 344,
-        left:25,
-        bottom:350,
-        borderRadius:15
+        borderRadius:15,
+        bottom:290
       },
 
       num:{
         fontSize:45,
         fontWeight: 'bold',
         color: 'white',
-        left: 40,
-        top:5
+        left:40,
+        top:10
       },
 
       percentage:{
         fontSize:18,
         fontWeight: 'bold',
         color: 'white',
-        left: 95,
-        bottom:43
+        left: 97,
+        bottom:36
       },
 
       off:{
         fontSize:13,
         fontWeight: 'bold',
         color: 'white',
-        left: 95,
-        bottom:45
+        left: 97,
+        bottom:38
       },
 
       date:{
@@ -271,46 +274,46 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         left: 40,
-        bottom:40
+        bottom:30
       },
 
       offer:{
         fontSize:26,
         fontWeight: 'bold',
         color: 'white',
-        left: 55,
-        bottom:42
+        left: 50,
+        bottom:28
       },
 
       time:{
         fontSize:10,
         fontWeight: 'bold',
         color: 'white',
-        left: 60,
-        bottom:45
+        left: 52,
+        bottom:30
       },
 
       foodimg:{
         height: 142,
         width: 179,
         left:165,
-        bottom:160
+        bottom:142
       },
 
       pop:{
         fontSize:25,
         fontWeight: 'bold',
         color: 'black',
-        left: 10,
-        bottom:110
+        left: 5,
+        bottom:120
       },
 
       pizzaimg:{
         width:130,
         height:130,
-        left:28,
+        left:18,
         borderRadius:7,
-        bottom:82
+        bottom:90
       },
 
       pizzaTxt:{
@@ -320,7 +323,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
         bottom:130,
-        left:28
+        left:18
       },
 
       burgerimg:{
@@ -328,7 +331,7 @@ const styles = StyleSheet.create({
         height:130,
         left:180,
         borderRadius:7,
-        bottom:232
+        bottom:240
       },
 
       burgertxt:{

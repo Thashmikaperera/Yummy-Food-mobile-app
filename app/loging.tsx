@@ -8,7 +8,12 @@ export default function Loging(){
     const [password, setPassword] = React.useState('');
 
     return (
-        <SafeAreaView style={{flex:1}}>
+        <SafeAreaView style={{
+          flex: 1,
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor:'#F2F2F2'
+        }}>
             <Image style={styles.img}
                 source={
                     require('../assets/images/logo.png')
@@ -75,60 +80,59 @@ export default function Loging(){
 
 const styles = StyleSheet.create({
     img:{
-        width:135,
-        height:70,
-        left:270,
-        bottom:10
+        width:140,
+        height:80,
+        left:150,
+        bottom:130
     },
 
     welcome:{
         fontSize:32,
         fontWeight:"bold",
-        left:20,
-        bottom:50
+        right:65,
+        bottom:160
     },
 
     good:{
         fontSize:17,
-        left:20,
-        bottom:54
+        right:85,
+        bottom:160
     },
 
     input: {
         width: 320,
         height: 50,
-        margin: 12,
+        margin: 5,
         borderWidth: 2,
-        
-        padding: 10,
-        left:20,
+        bottom:120,
+        padding: 15,
+        alignItems:'center',
         borderRadius:15
       },
 
     input1:{
         width: 320,
         height: 50,
-        margin: 12,
+        margin: 10,
         borderWidth: 2,
-        padding: 10,
-        left:20,
-        bottom:10,
+        bottom:120,
+        padding: 15,
+        alignItems:'center',
         borderRadius:15
     }  ,
 
     pass:{
         color:'#FB6107',
-        left: 228,
-        bottom:15
+        left: 100,
+        bottom:120
     },
     
     button: {
         backgroundColor: '#FB6107',
-        top: 37,
+        bottom: 75,
         width:201,
         height: 45,
         borderRadius:13,
-        left: 98,
         justifyContent: "center",
         alignItems: "center",
       },
@@ -141,8 +145,7 @@ const styles = StyleSheet.create({
 
       continue:{
         fontSize:17,
-        left:135,
-        top:90
+        bottom:20
       },
 
       btn1:{
@@ -152,13 +155,12 @@ const styles = StyleSheet.create({
         borderRadius:13,
         alignItems: "center",
         justifyContent: "center",
-        left:50,
-        top: 120
+        top: 10
       },
 
       apple:{
         fontSize:20,
-        left:18,
+        left:15,
         top:18,
       },
 
@@ -166,18 +168,16 @@ const styles = StyleSheet.create({
         width:47,
         height:38,
         right:100,
-        bottom:15
+        bottom:15,
       },
 
       btn2:{
         backgroundColor: '#D9D9D9',
         width: 285,
-        height: 56,
         borderRadius:13,
         alignItems: "center",
         justifyContent: "center",
-        left:50,
-        top: 130
+        top: 20
       },
 
       google:{
@@ -196,12 +196,10 @@ const styles = StyleSheet.create({
       btn3:{
         backgroundColor: '#D9D9D9',
         width: 285,
-        height: 56,
         borderRadius:13,
         alignItems: "center",
         justifyContent: "center",
-        left:50,
-        top: 140
+        top: 30
       },
 
       facebook:{
@@ -218,7 +216,6 @@ const styles = StyleSheet.create({
       },
 
       acc:{
-        top: 220,
-        left:90
+        top:110
       }
 });

@@ -28,7 +28,10 @@ export default function WelcomePage () {
 
 const styles = StyleSheet.create({
     container: {
-      alignItems: 'center'
+        display: 'flex',
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center"
     },
 
     img: {

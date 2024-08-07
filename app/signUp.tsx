@@ -8,7 +8,12 @@ export default function SignUp(){
     const [password, setPassword] = React.useState('');
 
     return (
-        <SafeAreaView style={{flex:1}}>
+        <SafeAreaView style={{
+          flex: 1,
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor:'#F2F2F2'
+        }}>
             <Image style={styles.img}
                 source={
                     require('../assets/images/logo.png')
@@ -73,7 +78,7 @@ export default function SignUp(){
             </TouchableOpacity>
 
             <Text style={styles.acc}>already have an account ? <Link href={'/loging'} style={{color: "#FB6107"}}>Sign in</Link></Text>
-            .
+            
             
         </SafeAreaView>
     )
@@ -81,23 +86,23 @@ export default function SignUp(){
 
 const styles = StyleSheet.create({
     img:{
-        width:135,
-        height:70,
-        left:270,
-        bottom:10
+      width:140,
+      height:80,
+      left:145,
+      bottom:105
     },
 
     welcome:{
         fontSize:26,
         fontWeight:"bold",
-        left:20,
-        bottom:50
+        right:55,
+        bottom:125
     },
 
     good:{
         fontSize:18,
-        left:20,
-        bottom:55
+        right:101,
+        bottom:125
     },
 
     input: {
@@ -107,7 +112,7 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor:"#FB6107",
         padding: 10,
-        left:20,
+        bottom:90,
         borderRadius:15
       },
 
@@ -117,8 +122,7 @@ const styles = StyleSheet.create({
         margin: 12,
         borderWidth: 2,
         padding: 10,
-        left:20,
-        bottom:10,
+        bottom:100,
         borderRadius:15
     }  ,
 
@@ -128,28 +132,19 @@ const styles = StyleSheet.create({
         margin: 12,
         borderWidth: 2,
         padding: 10,
-        left:20,
-        bottom:20,
+        bottom:110,
         borderRadius:15
-      },
-
-
-    pass:{
-        color:'#FB6107',
-        left: 228,
-        bottom:15
     },
-    
+
     button: {
         backgroundColor: '#FB6107',
-        top: 25,
+        bottom:60,
         width:201,
         height: 45,
         borderRadius:13,
-        left: 98,
         justifyContent: "center",
         alignItems: "center",
-      },
+    },
 
       buttonText: {
         color: '#fff',
@@ -159,8 +154,7 @@ const styles = StyleSheet.create({
 
       continue:{
         fontSize:17,
-        left:135,
-        top:70
+        bottom:20
       },
 
       btn1:{
@@ -170,8 +164,7 @@ const styles = StyleSheet.create({
         borderRadius:13,
         alignItems: "center",
         justifyContent: "center",
-        left:50,
-        top: 100
+        top:10
       },
 
       apple:{
@@ -194,8 +187,7 @@ const styles = StyleSheet.create({
         borderRadius:13,
         alignItems: "center",
         justifyContent: "center",
-        left:50,
-        top: 110
+        top: 20
       },
 
       google:{
@@ -218,8 +210,7 @@ const styles = StyleSheet.create({
         borderRadius:13,
         alignItems: "center",
         justifyContent: "center",
-        left:50,
-        top: 120
+        top: 30
       },
 
       facebook:{
@@ -236,8 +227,7 @@ const styles = StyleSheet.create({
       },
 
       acc:{
-        top: 170,
-        left:90
+        top:80
       }
 
 });
