@@ -6,16 +6,13 @@ import { router } from "expo-router";
 export default function Cart(){
   const [text, setText] = React.useState("");
     return(
-      <SafeAreaView>
-          <View style={{
+      <View style={{
         flex:1,
         justifyContent:'center',
         alignItems:'center',
         backgroundColor:'#F2F2F2'
       }}>
-         
-         
-
+          
          <View>
             <Image style={styles.img}
                     source={
@@ -27,14 +24,14 @@ export default function Cart(){
                     source={
                         require('@/assets/images/orCart.png')
             }/>
-         </View>
+         
          
       </View>
       <Text style={styles.txt}>There are no items in this cart</Text>
       <Button style={styles.btn} mode="contained" onPress={()=>{router.push('/(tabs)/(home)/')}}>
                     Continue Shopping
                     </Button>
-      </SafeAreaView>
+      </View>
       
     );
 }
@@ -44,24 +41,25 @@ const styles=StyleSheet.create({
       width:130,
       height:70,
       left:150,
-      bottom:10
+      bottom:220
     },
 
     cart:{
-      marginTop:"60%"
+      justifyContent:'center',
+      alignContent:'center'
     },
 
     txt:{
       fontSize:20,
       fontWeight:'bold',
-      marginTop:"90%",
+      justifyContent: 'center',
       textAlign:'center'
     },
 
     btn:{
         width:277,
-        marginTop:"10%",
-        marginLeft:"15%",
+        justifyContent:'center',
+        marginTop:20,
         borderRadius:6,
         backgroundColor:"#FB6107",
     }

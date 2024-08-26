@@ -28,7 +28,7 @@ export default function WelcomePage () {
 
 const styles = StyleSheet.create({
     container: {
-        display: 'flex',
+      display: 'flex',
       flex: 1,
       justifyContent: "center",
       alignItems: "center"
@@ -57,9 +57,9 @@ const styles = StyleSheet.create({
 
     button: {
         backgroundColor: '#FB6107',
-        marginTop: 10,
+        marginTop: -60,
         width:230,
-        height: 45,
+        height: 40,
         justifyContent: "center",
         alignItems: "center",
       },
